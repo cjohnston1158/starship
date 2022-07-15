@@ -2016,6 +2016,7 @@ along with the active controller and model, if set.
 
 [juju]
 symbol = "🐼 "
+format = '\[[$version($model)]($style)\] '
 ```
 
 
