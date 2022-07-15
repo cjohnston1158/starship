@@ -50,6 +50,7 @@ pub const PROMPT_ORDER: &[&str] = &[
     "haskell",
     "helm",
     "java",
+    "juju",
     "julia",
     "kotlin",
     "lua",

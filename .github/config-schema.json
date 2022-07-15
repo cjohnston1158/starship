@@ -721,6 +721,19 @@
         }
       ]
     },
+    "juju": {
+      "default": {
+        "disabled": true,
+        "format": "via [$symbol$version$model]($style) ",
+        "style": "fg:#E95420",
+        "symbol": "🔮 "
+      },
+      "allOf": [
+        {
+          "$ref": "#/definitions/JujuConfig"
+        }
+      ]
+    },
     "julia": {
       "default": {
         "detect_extensions": [
@@ -3186,6 +3199,27 @@
         },
         "disabled": {
           "default": false,
+          "type": "boolean"
+        }
+      }
+    },
+    "JujuConfig": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "default": "via [$symbol$version$model]($style) ",
+          "type": "string"
+        },
+        "symbol": {
+          "default": "🔮 ",
+          "type": "string"
+        },
+        "style": {
+          "default": "fg:#E95420",
+          "type": "string"
+        },
+        "disabled": {
+          "default": true,
           "type": "boolean"
         }
       }

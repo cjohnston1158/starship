@@ -38,6 +38,7 @@ pub mod hg_branch;
 pub mod hostname;
 pub mod java;
 pub mod jobs;
+pub mod juju;
 pub mod julia;
 pub mod kotlin;
 pub mod kubernetes;
@@ -163,6 +164,8 @@ pub struct FullConfig<'a> {
     java: java::JavaConfig<'a>,
     #[serde(borrow)]
     jobs: jobs::JobsConfig<'a>,
+    #[serde(borrow)]
+    juju: juju::JujuConfig<'a>,
     #[serde(borrow)]
     julia: julia::JuliaConfig<'a>,
     #[serde(borrow)]
